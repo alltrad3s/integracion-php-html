@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ciclos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
   <h2>Las tablas de multiplicar:</h2>
-  <table>
+  <div class="table-container">
+  <table class="table is-bordered">
     <tr>
       <th>X</th>
       <?php for ($i = 1; $i <= 10; $i++) : ?>
@@ -28,6 +30,7 @@
       </tr>
     <?php endfor; ?>
     <table>
+</div>
 </body>
 
 </html>
