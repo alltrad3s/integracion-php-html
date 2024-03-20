@@ -6,14 +6,14 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 function sendMail($subject, $body, $email, $name, $html = false) {
 
-    // Configuración inicial de nuestro servidor de correos
+    // Configuración inicial de nuestro servidor de correos, podemos utilizar mailtrap.io para correos de prueba pero 
     $phpmailer = new PHPMailer();
     $phpmailer->isSMTP();
-    $phpmailer->Host = 'smtp.mailtrap.io';
+    $phpmailer->Host = 'sandbox.smtp.mailtrap.io';
     $phpmailer->SMTPAuth = true;
     $phpmailer->Port = 2525;
-    $phpmailer->Username = '4ca1ce943d0ba1';
-    $phpmailer->Password = 'dcb5849e9c1c37';
+    $phpmailer->Username = 'cdd5c5ef5c44b9';
+    $phpmailer->Password = '556d5e361647e0';
 
     //  Añadiendo destinatarios
     $phpmailer->setFrom('mark@facebook.com', 'Mark Zuckerberg');

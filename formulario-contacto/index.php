@@ -1,5 +1,6 @@
 <?php
 
+// require es un statemet, no una funcion por lo que no require los parentesis. 
 require("mail.php");
 
 function validate($name, $email, $subject, $message, $form) {
