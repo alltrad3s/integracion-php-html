@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +34,20 @@
         <input type="checkbox" name="list1">
         <input type="checkbox" name="list2" value="Este valor fue clicado">
         <input type="checkbox" name="list3">
+
+        <!-- Radios -->
+        <label for="mexico">México</label>
+        <input type="radio" name="pais" value="México" id="mexico">
+
+        <label for="colombia">Colombia</label>
+        <input type="radio" name="pais" value="Colombia" id="colombia">
+
+        <label for="peru">Perú</label>
+        <input type="radio" name="pais" value="Perú" id="peru">
+
+        <!-- Múltiples archivos -->
+        <label for="galeria">Carga tus imágenes:</label>
+        <input type="file" multiple name="galeria[]" id="galeria">
 
         <button type="submit">Mandar formulario</button>
 
